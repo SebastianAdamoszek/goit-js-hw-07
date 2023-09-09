@@ -42,3 +42,40 @@
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+
+/* Styl dla okna modalnego */
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal__overlay {
+  margin: 0 auto;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.modal__content {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+/* Styl dla obrazu wewnątrz modala */
+#modalImage img {
+  width: 800px;
+  height: 600px;
+}
