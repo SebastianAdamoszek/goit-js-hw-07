@@ -14,6 +14,7 @@ const galleryItemsHTML = galleryItems.map(image => `
     />
   </a>
 </div>
+
 `).join("");
 
 galleryList.insertAdjacentHTML("beforeend", galleryItemsHTML);
